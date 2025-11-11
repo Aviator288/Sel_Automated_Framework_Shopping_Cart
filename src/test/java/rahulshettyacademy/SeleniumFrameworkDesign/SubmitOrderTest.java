@@ -59,7 +59,7 @@ public class SubmitOrderTest extends BaseTest{
 	public void OrderHistoryTest()
 	{
 		//"ZARA COAT 3";
-		productCatalogue pd = landingPage.loginApplication("blacksovereign467@gmail.com", "GOD4ever@");
+		productCatalogue pd = landingPage.loginApplication("emailname@gmail.com", "password");
 		OrderPage ordersPage = pd.goToOrdersPage();
 		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
 		
@@ -69,13 +69,13 @@ public class SubmitOrderTest extends BaseTest{
 	@DataProvider
 	public Object[][] getData() throws IOException {
 		/*HashMap<String,String> map = new HashMap<String,String>();
-        map.put("email", "blacksovereign467@gmail.com");
-		map.put("password", "GOD4ever@");
+        map.put("email", "emailname@gmail.com");
+		map.put("password", "password");
 		map.put("product", "ZARA COAT 3");
 		
 		HashMap<String,String> map1 = new HashMap<String,String>();
-		map1.put("email", "blacksovereign467@gmail.com");
-		map1.put("password", "GOD4ever@");
+		map1.put("email", "emailname@gmail.com");
+		map1.put("password", "password");
 		map1.put("product", "ADIDAS ORIGINAL");*/
 		
 		List<HashMap<String, String>> data = getJsonDataToMap(System.getProperty("user.dir")+"//src//test//java//rahulshettyacademy//data//PurchaseOrder.json");
