@@ -34,7 +34,7 @@ public class StandAloneTest {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 		LandingPage landing = new LandingPage(driver);
 		landing.goTo();
-		productCatalogue pd = landing.loginApplication("blacksovereign467@gmail.com", "enter password");
+		productCatalogue pd = landing.loginApplication("emailname@gmail.com", "enter password");
 		productCatalogue pd2 = new productCatalogue(driver);
 		
 		List<WebElement> products =  pd.getProductList(); //gets product lists
